@@ -22,7 +22,7 @@ stages:
       - task: Docker@2
         inputs:
           containerRegistry: 'ACR-GLOBAL-SERVICE-CONNECTION'
-          repository: 'azure-devops-aks-acr'
+          repository: 'azure-devops-acr-aks'
           command: 'buildAndPush'
           Dockerfile: '**/Dockerfile'
       
