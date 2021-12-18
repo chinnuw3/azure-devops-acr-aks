@@ -6,8 +6,11 @@
 trigger:
 - master
 
+variables:
+  tag: '$(Build.BuildId)'
+
 stages:
-  - stage: Build job
+  - stage: Build
     displayName: Build stage
     jobs:
     - job: Build
